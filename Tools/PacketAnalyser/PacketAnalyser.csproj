@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6979ABD-1B0D-42CD-A29E-5F10675380B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PacketAnalyser</RootNamespace>
+    <AssemblyName>PacketAnalyser</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PcapDotNet.Base">
+      <HintPath>PCAP\Pcap.NET\PcapDotNet.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="PcapDotNet.Core">
+      <HintPath>PCAP\Pcap.NET\PcapDotNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PcapDotNet.Core.Extensions">
+      <HintPath>PCAP\Pcap.NET\PcapDotNet.Core.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="PcapDotNet.Packets">
+      <HintPath>PCAP\Pcap.NET\PcapDotNet.Packets.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\aConsole.cs" />
+    <Compile Include="Classes\CaptureLoader.cs" />
+    <Compile Include="Classes\Crypto\BigInteger.cs" />
+    <Compile Include="Classes\Crypto\ICipherParameters.cs" />
+    <Compile Include="Classes\Crypto\IStreamCipher.cs" />
+    <Compile Include="Classes\Crypto\KeyParameter.cs" />
+    <Compile Include="Classes\Crypto\ParametersWithIV.cs" />
+    <Compile Include="Classes\Crypto\Salsa20.cs" />
+    <Compile Include="Classes\Crypto\Strings.cs" />
+    <Compile Include="Classes\MiscUtil\EndianBinaryReader.cs" />
+    <Compile Include="Classes\MiscUtil\EndianBinaryWriter.cs" />
+    <Compile Include="Classes\Packet.cs" />
+    <Compile Include="Classes\Utils.cs" />
+    <Compile Include="Classes\Zlib2\Adler32.cs" />
+    <Compile Include="Classes\Zlib2\Deflate.cs" />
+    <Compile Include="Classes\Zlib2\InfBlocks.cs" />
+    <Compile Include="Classes\Zlib2\InfCodes.cs" />
+    <Compile Include="Classes\Zlib2\Inflate.cs" />
+    <Compile Include="Classes\Zlib2\InfTree.cs" />
+    <Compile Include="Classes\Zlib2\StaticTree.cs" />
+    <Compile Include="Classes\Zlib2\SupportClass.cs" />
+    <Compile Include="Classes\Zlib2\Tree.cs" />
+    <Compile Include="Classes\Zlib2\ZInputStream.cs" />
+    <Compile Include="Classes\Zlib2\Zlib.cs" />
+    <Compile Include="Classes\Zlib2\ZOutputStream.cs" />
+    <Compile Include="Classes\Zlib2\ZStream.cs" />
+    <Compile Include="Classes\Zlib2\ZStreamException.cs" />
+    <Compile Include="Classes\Zlib\CRC32.cs" />
+    <Compile Include="Classes\Zlib\Deflate.cs" />
+    <Compile Include="Classes\Zlib\DeflateStream.cs" />
+    <Compile Include="Classes\Zlib\GZipStream.cs" />
+    <Compile Include="Classes\Zlib\Inflate.cs" />
+    <Compile Include="Classes\Zlib\InfTree.cs" />
+    <Compile Include="Classes\Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="Classes\Zlib\Tree.cs" />
+    <Compile Include="Classes\Zlib\Zlib.cs" />
+    <Compile Include="Classes\Zlib\ZlibBaseStream.cs" />
+    <Compile Include="Classes\Zlib\ZlibCodec.cs" />
+    <Compile Include="Classes\Zlib\ZlibConstants.cs" />
+    <Compile Include="Classes\Zlib\ZlibStream.cs" />
+    <Compile Include="Forms\Controls\HexBox\BuiltInContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\HexBox\ByteCharConverters.cs" />
+    <Compile Include="Forms\Controls\HexBox\ByteCollection.cs" />
+    <Compile Include="Forms\Controls\HexBox\BytePositionInfo.cs" />
+    <Compile Include="Forms\Controls\HexBox\DataBlock.cs" />
+    <Compile Include="Forms\Controls\HexBox\DataMap.cs" />
+    <Compile Include="Forms\Controls\HexBox\DynamicByteProvider.cs" />
+    <Compile Include="Forms\Controls\HexBox\DynamicFileByteProvider.cs" />
+    <Compile Include="Forms\Controls\HexBox\FileByteProvider.cs" />
+    <Compile Include="Forms\Controls\HexBox\FileDataBlock.cs" />
+    <Compile Include="Forms\Controls\HexBox\HexBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\HexBox\HexCasing.cs" />
+    <Compile Include="Forms\Controls\HexBox\IByteProvider.cs" />
+    <Compile Include="Forms\Controls\HexBox\MemoryDataBlock.cs" />
+    <Compile Include="Forms\Controls\HexBox\NativeMethods.cs" />
+    <Compile Include="Forms\Controls\HexBox\Util.cs" />
+    <Compile Include="Forms\LiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LiveForm.Designer.cs">
+      <DependentUpon>LiveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PCAP\PacketDotNet\ApplicationPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\ARPFields.cs" />
+    <Compile Include="PCAP\PacketDotNet\ARPOperation.cs" />
+    <Compile Include="PCAP\PacketDotNet\ARPPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\DataLinkPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\EthernetFields.cs" />
+    <Compile Include="PCAP\PacketDotNet\EthernetPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\EthernetPacketType.cs" />
+    <Compile Include="PCAP\PacketDotNet\ICMPv4Fields.cs" />
+    <Compile Include="PCAP\PacketDotNet\ICMPv4Packet.cs" />
+    <Compile Include="PCAP\PacketDotNet\ICMPv4TypeCodes.cs" />
+    <Compile Include="PCAP\PacketDotNet\ICMPv6Fields.cs" />
+    <Compile Include="PCAP\PacketDotNet\ICMPv6Packet.cs" />
+    <Compile Include="PCAP\PacketDotNet\ICMPv6Types.cs" />
+    <Compile Include="PCAP\PacketDotNet\Ieee80211FrameControlField.cs" />
+    <Compile Include="PCAP\PacketDotNet\Ieee80211MacFields.cs" />
+    <Compile Include="PCAP\PacketDotNet\Ieee80211MacFrame.cs" />
+    <Compile Include="PCAP\PacketDotNet\Ieee80211RadioFields.cs" />
+    <Compile Include="PCAP\PacketDotNet\Ieee80211RadioPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\Ieee80211RadioTapChannelFlags.cs" />
+    <Compile Include="PCAP\PacketDotNet\Ieee80211RadioTapFields.cs" />
+    <Compile Include="PCAP\PacketDotNet\Ieee80211RadioTapFlags.cs" />
+    <Compile Include="PCAP\PacketDotNet\Ieee80211RadioTapType.cs" />
+    <Compile Include="PCAP\PacketDotNet\IGMPMessageType.cs" />
+    <Compile Include="PCAP\PacketDotNet\IGMPv2Fields.cs" />
+    <Compile Include="PCAP\PacketDotNet\IGMPv2Packet.cs" />
+    <Compile Include="PCAP\PacketDotNet\ILogInactive.cs" />
+    <Compile Include="PCAP\PacketDotNet\InternetLinkLayerPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\InternetPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\IpPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\IpPort.cs" />
+    <Compile Include="PCAP\PacketDotNet\IPProtocolType.cs" />
+    <Compile Include="PCAP\PacketDotNet\IPv4Fields.cs" />
+    <Compile Include="PCAP\PacketDotNet\IPv4Packet.cs" />
+    <Compile Include="PCAP\PacketDotNet\IPv6Fields.cs" />
+    <Compile Include="PCAP\PacketDotNet\IPv6Packet.cs" />
+    <Compile Include="PCAP\PacketDotNet\IpVersion.cs" />
+    <Compile Include="PCAP\PacketDotNet\LinkLayers.cs" />
+    <Compile Include="PCAP\PacketDotNet\LinuxSLLFields.cs" />
+    <Compile Include="PCAP\PacketDotNet\LinuxSLLPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\LinuxSLLType.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDPPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\AddressFamily.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\CapabilityOptions.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\ChassisID.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\ChassisSubTypes.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\EndOfLLDPDU.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\InterfaceNumbering.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\ManagementAddress.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\NetworkAddress.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\OrganizationSpecific.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\PortDescription.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\PortID.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\PortSubTypes.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\StringTLV.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\SystemCapabilities.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\SystemDescription.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\SystemName.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\TimeToLive.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\TLV.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\TLVCollection.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\TLVTypeLength.cs" />
+    <Compile Include="PCAP\PacketDotNet\LLDP\TLVTypes.cs" />
+    <Compile Include="PCAP\PacketDotNet\MiscUtil\Conversion\BigEndianBitConverter.cs" />
+    <Compile Include="PCAP\PacketDotNet\MiscUtil\Conversion\DoubleConverter.cs" />
+    <Compile Include="PCAP\PacketDotNet\MiscUtil\Conversion\EndianBitConverter.cs" />
+    <Compile Include="PCAP\PacketDotNet\MiscUtil\Conversion\Endianness.cs" />
+    <Compile Include="PCAP\PacketDotNet\MiscUtil\Conversion\LittleEndianBitConverter.cs" />
+    <Compile Include="PCAP\PacketDotNet\MiscUtil\IO\EndianBinaryReader.cs" />
+    <Compile Include="PCAP\PacketDotNet\MiscUtil\IO\EndianBinaryWriter.cs" />
+    <Compile Include="PCAP\PacketDotNet\Packet.cs" />
+    <Compile Include="PCAP\PacketDotNet\PacketOrByteArraySegment.cs" />
+    <Compile Include="PCAP\PacketDotNet\PayloadType.cs" />
+    <Compile Include="PCAP\PacketDotNet\PPPFields.cs" />
+    <Compile Include="PCAP\PacketDotNet\PPPoECode.cs" />
+    <Compile Include="PCAP\PacketDotNet\PPPoEFields.cs" />
+    <Compile Include="PCAP\PacketDotNet\PPPoEPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\PPPPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\PPPProtocol.cs" />
+    <Compile Include="PCAP\PacketDotNet\SessionPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\StringOutputType.cs" />
+    <Compile Include="PCAP\PacketDotNet\TcpFields.cs" />
+    <Compile Include="PCAP\PacketDotNet\TcpPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\AlternateChecksumData.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\AlternateChecksumRequest.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\ChecksumAlgorighmType.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\Echo.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\EchoReply.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\EndOfOptions.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\MaximumSegmentSize.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\MD5Signature.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\NoOperation.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\Option.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\OptionTypes.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\SACK.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\SACKPermitted.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\TimeStamp.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\UserTimeout.cs" />
+    <Compile Include="PCAP\PacketDotNet\Tcp\WindowScaleFactor.cs" />
+    <Compile Include="PCAP\PacketDotNet\TransportPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\UdpFields.cs" />
+    <Compile Include="PCAP\PacketDotNet\UdpPacket.cs" />
+    <Compile Include="PCAP\PacketDotNet\Utils\AnsiEscapeSequences.cs" />
+    <Compile Include="PCAP\PacketDotNet\Utils\ByteArraySegment.cs" />
+    <Compile Include="PCAP\PacketDotNet\Utils\ChecksumUtils.cs" />
+    <Compile Include="PCAP\PacketDotNet\Utils\HexPrinter.cs" />
+    <Compile Include="PCAP\PacketDotNet\Utils\RandomUtils.cs" />
+    <Compile Include="PCAP\PacketDotNet\WakeOnLanPacket.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapAdapterBus.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapAdapterId.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapBands.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapChannelInfo.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapChannelInfoFlags.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapDecryptionState.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapDevice.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapDeviceCapabilities.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapDeviceDescription.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapDeviceList.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapDeviceTimestamp.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapKey.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapKeyType.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapLinkTypes.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapMacFlags.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapMediumType.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapPacketHeader.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapSafeNativeMethods.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapStatistics.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapUnmanagedStructures.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapValidationType.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\AirPcapVersion.cs" />
+    <Compile Include="PCAP\SharpPcap\AirPcap\Win32SafeNativeMethods.cs" />
+    <Compile Include="PCAP\SharpPcap\ARP.cs" />
+    <Compile Include="PCAP\SharpPcap\CaptureDeviceList.cs" />
+    <Compile Include="PCAP\SharpPcap\CaptureEventArgs.cs" />
+    <Compile Include="PCAP\SharpPcap\CaptureStoppedEventHandler.cs" />
+    <Compile Include="PCAP\SharpPcap\CaptureStoppedEventStatus.cs" />
+    <Compile Include="PCAP\SharpPcap\DeviceMode.cs" />
+    <Compile Include="PCAP\SharpPcap\DeviceNotReadyException.cs" />
+    <Compile Include="PCAP\SharpPcap\ICaptureDevice.cs" />
+    <Compile Include="PCAP\SharpPcap\ICaptureStatistics.cs" />
+    <Compile Include="PCAP\SharpPcap\InvalidOperationDuringBackgroundCaptureException.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\CaptureFileReaderDevice.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\CaptureFileWriterDevice.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\LibPcapLiveDevice.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\LibPcapLiveDeviceList.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\LibPcapSafeNativeMethods.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\PcapAddress.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\PcapDevice.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\PcapDeviceCaptureLoop.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\PcapHeader.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\PcapInterface.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\PcapStatistics.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\PcapUnmanagedStructures.cs" />
+    <Compile Include="PCAP\SharpPcap\LibPcap\Sockaddr.cs" />
+    <Compile Include="PCAP\SharpPcap\NotSupportedOnCaptureFileException.cs" />
+    <Compile Include="PCAP\SharpPcap\PacketArrivalEventHandler.cs" />
+    <Compile Include="PCAP\SharpPcap\Pcap.cs" />
+    <Compile Include="PCAP\SharpPcap\PcapException.cs" />
+    <Compile Include="PCAP\SharpPcap\PosixTimeval.cs" />
+    <Compile Include="PCAP\SharpPcap\RawCapture.cs" />
+    <Compile Include="PCAP\SharpPcap\StatisticsException.cs" />
+    <Compile Include="PCAP\SharpPcap\Version.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcapRequiredException.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\AuthenticationTypes.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\CaptureMode.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\OpenFlags.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\RemoteAuthentication.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\SafeNativeMethods.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\SendQueue.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\SendQueueTransmitModes.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\StatisticsModeEventArgs.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\StatisticsModeEventHandler.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\StatisticsModePacket.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\UnmanagedStructures.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\WinPcapDevice.cs" />
+    <Compile Include="PCAP\SharpPcap\WinPcap\WinPcapDeviceList.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Controls\HexBox\HexBox.resx">
+      <DependentUpon>HexBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LiveForm.resx">
+      <DependentUpon>LiveForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="PCAP\PacketDotNet\Libraries\log4net.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

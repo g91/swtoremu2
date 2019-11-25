@@ -1,0 +1,6 @@
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\Hero\bin\Debug\Hero.dll
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\Hero\bin\Debug\Hero.pdb
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\Hero\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\Hero\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\Hero\obj\x86\Debug\Hero.dll
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\Hero\obj\x86\Debug\Hero.pdb

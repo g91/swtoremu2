@@ -1,0 +1,68 @@
+﻿namespace NexusToRServer
+{
+    public enum CPacketType : uint
+    {
+        Null = 0x00,
+        ClientHello = 0x00000011,
+        ConnectionHandshake = 0x04,
+        Ping = 0x00000001,
+        Pong = 0x00000001,
+        RequestID = 0xA609E6A7,
+        ReplyID = 0x6731C5AF,
+        RequestIntroduceConnection = 0x8B0D492F,
+        ReplyIntroduceConnection = 0x90F2D084,
+        RequestClose = 0x43DB3479
+    }
+
+    public enum PacketType : uint
+    {
+        Null = 0x00,
+        ClientHello = 0x00000011,
+        ConnectionHandshake = 0x04,
+        Ping = 0x00000001,
+        Pong = 0x00000001,
+        ObjectRequest = 0xA609E6A7,
+        ObjectReply = 0x6731C5AF,
+        SignatureResponse = 0x8B0D492F,
+        ClientInformation = 0xD4BA5CFB,
+        ServiceRequest = 0x5FE920D4,
+        TimeRequesterRequest = 0x420923E0,
+        TimeRequesterReply = 0x8D576F7B,
+        HackNotifyData = 0x0C0BA34F,
+        CMsgC26464A9 = 0xC26464A9,
+        ModulesList = 0x2195CC8A,
+        CharacterListRequest = 0xFB2047CE,
+        CharacterListReply = 0x0EC2A425,
+        SetTrackingInfo = 0xD0D38F43,
+        RequestClose = 0x43DB3479,
+        WorldNotifyGauntletVersion = 0x25ACBEF4,
+        WorldRequestRPC = 0x25E86D5C,
+        WorldHackPack = 0xECB59833,
+        WorldShouldSendScriptErrors = 0x35BEBAA5,
+        GameSystemNotifyID = 0x4BD75535,
+        TrackingServerInit = 0x04CCE2BB,
+        CreateCharacterRequest = 0xD130EAB9,
+        SelectCharacterRequest = 0xCFFE7758,
+        SelectCharacterReply = 0xA0D00B3A,
+        WorldTravelPending = 0x246462DB,
+        WorldTravelStatus = 0x7AD491DA,
+        WorldSendToArea = 0x13509F15,
+        ClientReplicationTransaction = 0x34287945,
+        AreaHackPack = 0x0E71623B,
+        AreaSendAwarenessRange = 0x1CA72F2D,
+        AreaUpdateTimeSource = 0x8F0A39AA,
+        AreaRequestRPC = 0x0ADFF9BF,
+        AreaTeleportCharacter = 0x944511BF,
+        SetMailboxInteraction = 0x01837678,
+        AreaTalk = 0x6BA87A93,
+        AreaSetCharacter = 0xCFBFFBCB,
+        AreaEffEventMessage = 0xDBF41C90,
+        CMsg7CB9A193 = 0x7CB9A193,
+        AreaModulesList = 0x74D16DED,
+        AreaClientReplicationTransaction = 0x0D446E80,
+        HasMail = 0x4AA61E6B,
+        AreaAwarenessEntered = 0xA1D9E226,
+        SMsg23B61238 = 0x23B61238,
+        SystemRequestRPC = 0x2D0B9303
+    }
+}

@@ -1,0 +1,9 @@
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\GomLib\obj\Release\ResolveAssemblyReference.cache
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\GomLib\bin\Release\gom_type_names.xml
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\GomLib\bin\Release\GomLib.dll
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\GomLib\bin\Release\GomLib.pdb
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\GomLib\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\GomLib\bin\Release\TorLib.dll
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\GomLib\bin\Release\TorLib.pdb
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\GomLib\obj\Release\GomLib.dll
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\GomLib\obj\Release\GomLib.pdb

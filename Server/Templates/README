@@ -1,0 +1,7 @@
+Put these in "%USERPROFILE%\Documents\Visual Studio 2010\Templates\ItemTemplates\".
+Then, when you want to create a new packet simply go the corresponding folder in the Solution Browser, right click, Add > New Item... > TOR (Client/Server) Packet and name it as the packet you are implementing.
+
+Packet handlers are defined in NET\TORGamePacketHandler.cs in the function HandlePacket().
+
+(NOTE: Don't forget to also define that packet in the NET\Packet\PacketTypes.cs class)
+

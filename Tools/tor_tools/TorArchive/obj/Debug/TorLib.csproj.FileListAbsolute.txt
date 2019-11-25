@@ -1,0 +1,1 @@
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\TorArchive\obj\Debug\ResolveAssemblyReference.cache

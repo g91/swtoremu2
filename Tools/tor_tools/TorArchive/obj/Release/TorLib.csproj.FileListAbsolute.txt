@@ -1,0 +1,6 @@
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\TorArchive\obj\Release\ResolveAssemblyReference.cache
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\TorArchive\bin\Release\TorLib.dll
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\TorArchive\bin\Release\TorLib.pdb
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\TorArchive\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\TorArchive\obj\Release\TorLib.dll
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\TorArchive\obj\Release\TorLib.pdb

@@ -1,0 +1,7 @@
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\tor_tools\bin\Debug\tor_tools.exe.config
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\tor_tools\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\tor_tools\obj\x86\Debug\tor_tools.dumper.resources
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\tor_tools\obj\x86\Debug\tor_tools.Tools.resources
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\tor_tools\obj\x86\Debug\tor_tools.Properties.Resources.resources
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\tor_tools\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\domo\Desktop\swtoremu3\trunk\Tools\tor_tools\tor_tools\obj\x86\Debug\GenerateResource.write.1.tlog
